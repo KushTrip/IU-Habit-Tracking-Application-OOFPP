@@ -33,9 +33,7 @@ python3 --version
 * To clone the repository : 
 
 ```commandline
-git clone https://github.com/KushTrip
-/
-IU-Habit-Tracking-Application-OOFPP.git
+https://github.com/KushTrip/IU-Habit-Tracking-Application-OOFPP.git
 ```
 * To download Inquirer module: 
 ```commandline
