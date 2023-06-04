@@ -37,7 +37,7 @@
 
  A habit monitoring/tracking application  helps users create and maintain healthy routines, allowing them to monitor their development by tracking their streaks and enhance their general well-being and productivity.The app allows users to keep track of their daily routines and habits by creating a new habit , and keep track of good habits to form and bad ones to break.
 
- This work is a part of *IU University's* *object oriented and functional programming with python* course.
+ This work is developed as  a part of *IU University of applied Science's* *object oriented and functional programming with python* module.
 
 
 ## Core Features of the Application
@@ -68,11 +68,7 @@ Moreover, the user will also be able to:
  Make sure that Python 3.7 + is installed on your OS. You can download the latest version of Python from [this link.](https://www.python.org/downloads/)<br>
 
 <br> After installing Python, you can proceed and install the following libraries. <br>
-<br>
-To clone the repository, navigate to the desired directory. Use this code to clone the repository and download the habit tracker application:
-```
-https://github.com/KushTrip/IU-Habit-Tracking-Application-OOFPP.git
-```
+
 <br>Inquirer : Inquirer is a Python module for creating interactive command-line user interfaces.
 <br>Install it by running the below command:<br>
 ```
@@ -83,15 +79,21 @@ pip install inquirer
 To run the tests, you will need the following packages installed:
 <br>Pytest - For testing functions:<br>
 ```
-pip install -U pytest
-```
-<br>Freezegun - For freezing time: <br>
-```
-pip install freezegun
+pip install pytest
 ```
 
+
 ## How To Run the Program
-After installing the dependencies, download the files from this repository (if not downloaded already) and store them in a separate folder. Open your command/terminal window and [cd](https://www.alphr.com/change-directory-in-cmd/) to your downloaded folder. After that, type the following command to execute the program:
+After installing the required tools, download the files from this repository and store them in a separate folder.
+<br>
+To clone the repository, navigate to the desired directory. Use this code to clone the repository and download the habit tracker application:
+```
+https://github.com/KushTrip/IU-Habit-Tracking-Application-OOFPP.git
+```
+
+Open your command/terminal window and change directory [cd] to your downloaded folder.By changing directories, you can navigate to the specific location where the files or folders are located and perform operations on them.<br>
+<br>
+After that, type the following command to execute the program:
 ```
 python main.py
 ```
@@ -102,113 +104,69 @@ python3 main.py
 Doing so will launch the CLI and then you'll be able to see and choose from the following options in your Habit Tracker:
 
 ```
-*** Welcome to the Habit Tracker ***
+*** Welcome to the Habit Tracking Application ***
 
-What do you want to do? (Use arrow keys)
- » Add/Remove Habit OR Category
-   Modify Habit's Periodicity
-   Mark Habit as Completed
-   Show Habits (All or Sort by Periodicity)
-   Analytics
-   Exit
+What do you wish to do? (Use arrow keys for navigation)
+ » Create a new habit
+   Mark your habit as completed(Check-off)
+   Analyze your habit 
+   Delete your habit
 ```
 
 ## Running tests
-To run the test; navigate to the test folder (included with the repository) through command/terminal by using [cd](https://www.alphr.com/change-directory-in-cmd/) and then type ```pytest```. 
+To run the test: navigate to the test folder (included with the repository) through command/terminal by using [cd](https://www.alphr.com/change-directory-in-cmd/) and then type ```pytest```. 
 
 # Usage
 
 **Important**: You can choose to keep or remove the **main.db** file as it contains the following pre-defined habits: Coding, Workout, Grocery, Piano, and Hiking. <br>
 
-## Add/Remove Habit OR Category
-#### 1. Adding a habit
-Your first action should start by creating an habit and you can do so by launching the program and selecting:
+#### 1. Creating a new  habit
+Your first action should start by creating a habit and you can do so by launching the program and selecting:
 ```
- Add/Remove Habit OR Category
+ Create a new habit
 ```
-It will further expose the user to a sub-menu, where you'll have to choose *Add habit* and enter the required information:
+It will further expose the user to a sub-menu, where you'll have to enter name, goal of the habit and also set its periodicity to either daily or weekly.
 ```
-Would you like to Add, Remove Habit or Category? (Use arrow keys)
- » Add Habit
-   Remove Habit
-   Delete Category
-   Back to Main Menu
-
+Enter the name of your habit : 
+Enter the goal of your habit : 
+Set the periodicity of your habit to either Daily or weekly : 
+ »Daily 
+ Weekly
 ```
-https://user-images.githubusercontent.com/48772669/179855439-e20830dc-1c75-41cf-aa57-a2c7b0c12a7a.mp4
 
-#### 2. Remove Habit
-This option will show you a list of habits that you have created, you'll have to simply choose the habit you want to delete and press enter.
-
-#### 3. Delete Category
-Similar to removing habit; a list of created categories will be shown for the user to select.
-
-#### 4. Back to Main Menu
-Takes the user back to main menu.
-
-## Modify Habit's Periodicity
-User will have to select the habit they'd like to change the periodicity of and then a new prompt will ask the user to select the new periodicity for the habit.
-
-## Mark Habit as Completed
-The user can use this option to mark their habit as completed. <br> Note: A habit can be marked as completed only once during the defined period. <br>
-<br>Note: If the user failed to complete their habit within the specified periodicity; then marking the habit as completed will the reset the streak to 1. <br>
-<br>Why 1 though? Because the user invoked the mark as completed function to complete their habit thus the function takes this into account and resets the habit to 1 to register the very current streak.
-
-https://user-images.githubusercontent.com/48772669/179856460-19a87cb4-4750-413c-89fa-16bd2b85be7d.mp4
-
-## Show Habits (All or Sort by Periodicity)
-
-#### 1. View All Habits
-Lists all the created habits along with their information like *Name, Periodicity, Category and Date/Time*.
-
-https://user-images.githubusercontent.com/48772669/179857285-921aea0b-e517-4e7b-a58a-0d83e9cefbe6.mp4
-
-#### 2. View Daily Habits
-Lists all the habits in the daily period.
-#### 3. View Weekly Habits
-Lists all the habits in the weekly period.
-#### 4. View Monthly Habits
-Lists all the habits in the monthly period.
-#### 5. Back to Main Menu
-Obvious function.
+#### 2. Remove a Habit
+Choose "Delete your habit" from the main screen and type the name of the habit you wish to remove.
+```
+Enter the name of the habit you wish to delete :
+```
 
 
+#### 3. Mark your habit as completed(Check-off habit)
+To check-off or mark habit as complete, choose "Mark your habit as completed(Check-off)" from the main screen, then enter the name of the habit you want to check-off.
+```
+Enter the name of the habit you wish to check-off :
+```
 
-## Analytics
-#### 1. View All Habit's Streaks
-Lists all the habits and their streaks.
 
-https://user-images.githubusercontent.com/48772669/179857969-61c3de26-bb0f-4624-a075-7f407d971547.mp4
+#### 4.Analyze your habit
+The application also  provides the functionality to the users to analyze their habits. To analyze the habit, choose "analyze your habit" from the main screen and then choose their desirable analytical option.
+```
+Select your desirable analytical option among the following :
+* Display all of my created habits
+* Display habits which are of the same periodicity.
+* Display the habit which has the longest streak.
+* Display the longest streak of a specific habit.
+```
 
-#### 2. View Longest Streak of Specific Habit
-Lists the longest streak ever achieved by a specific habit.
-#### 3. View Streak Log of Specific Habit
-Shows the streak history of the specific habit.
-#### 4. Back to Main Menu
-And menu it is!
-
-## Exit
-Exits the program.
 
 # Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
+Contributions are eagerly welcomed! If you have any cutting-edge suggestions, troublesome bug reports, or awe-inspiring feature requests, please open an issue or surprise me  with a fascinating pull request. Your feedback will be greatly appreciated!
 
 # Contact
 
-Izaan Zubair - [Email](mailto:izkidy@yahoo.com)
+Kush Tripathi - [Email](tripathikush10@gmail.com)
 
-Project Link: [https://github.com/izaanz/habit_tracker](https://github.com/izaanz/habit_tracker)
+Project Link: [https://github.com/KushTrip/IU-Habit-Tracking-Application-OOFPP](https://github.com/KushTrip/IU-Habit-Tracking-Application-OOFPP)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
