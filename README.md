@@ -11,7 +11,7 @@
   * [How To Run the Program](#how-to-run-the-program)
   * [Running Tests](#running-tests)
 - [Usage](#usage)
-  * [1.Creating a new  habit](#1.Creating-a-new-habit)
+  * [1.Creating a new habit](#1.Creating-a-new-habit)
   * [2.Remove a Habit](#2.Remove-a-Habit)
   * [3.Mark your habit as completed(Check-off habit)](#3.Mark-your-habit-as-completed-(Check-offhabit))
   * [4.Analyze your habit](#4.Analyze-your-habit)
@@ -105,7 +105,7 @@ To run the test: navigate to the test folder (included with the repository) thro
 
 **Important**: You can choose to keep or remove the **main.db** file as it contains the following pre-defined habits: Coding, Workout, Grocery, Piano, and Hiking. <br>
 
-## 1.Creating a new  habit
+## 1.Creating a new habit
 Your first action should start by creating a habit and you can do so by launching the program and selecting:
 ```
  Create a new habit
