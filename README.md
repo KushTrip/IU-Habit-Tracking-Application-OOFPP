@@ -68,14 +68,15 @@ Moreover, the user will also be able to:
  Make sure that Python 3.7 + is installed on your OS. You can download the latest version of Python from [this link.](https://www.python.org/downloads/)<br>
 
 <br> After installing Python, you can proceed and install the following libraries. <br>
+<br>
 To clone the repository, navigate to the desired directory. Use this code to clone the repository and download the habit tracker application:
 ```
-
+https://github.com/KushTrip/IU-Habit-Tracking-Application-OOFPP.git
 ```
-<br>[Questionary](https://www.python.org/downloads/) - Questionary is a Python library for building pretty command line interfaces. 
-<br>Install by running the below command:<br>
+<br>Inquirer : Inquirer is a Python module for creating interactive command-line user interfaces.
+<br>Install it by running the below command:<br>
 ```
-pip install questionary
+pip install inquirer
 ```
 
 ### Packages for running tests
