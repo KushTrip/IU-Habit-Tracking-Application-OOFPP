@@ -1,35 +1,20 @@
 # IU-Habit-Tracking-Application-OOFPP
 ***
 # Table of Contents
-- [Habit Tracker](#habit-tracker)
-  * [Habit Tracker's Core Functionality](#habit-tracker-s-core-functionality)
-    + [Progress and Streak Tracker](#progress-and-streak-tracker)
-- [Getting Started](#getting-started)
-  * [Dependencies](#dependencies)
-  * [Installing](#installing)
+- [What is a habit tracking Application ?](#What is a habit tracking Application ?)
+  * [Core Features of the Application](#Core Features of the Application)
+    + [Analytics](#Analytics)
+- [Guide to the installation of the application](#Guide to the installation of the application)
+  * [Tools required ](#Tools required )
+  * [Installing the tools](#Installing the tools)
     + [Packages for running tests](#packages-for-running-tests)
   * [How To Run the Program](#how-to-run-the-program)
   * [Running Tests](#running-tests)
 - [Usage](#usage)
-  * [Add/Remove Habit OR Category](#add-remove-habit-or-category)
-      - [1. Adding a habit](#1-adding-a-habit)
-      - [2. Remove Habit](#2-remove-habit)
-      - [3. Delete Category](#3-delete-category)
-      - [4. Back to Main Menu](#4-back-to-main-menu)
-  * [Modify Habit's Periodicity](#modify-habit-s-periodicity)
-  * [Mark Habit as Completed](#mark-habit-as-completed)
-  * [Show Habits (All or Sort by Periodicity)](#show-habits--all-or-sort-by-periodicity-)
-      - [1. View All Habits](#1-view-all-habits)
-      - [2. View Daily Habits](#2-view-daily-habits)
-      - [3. View Weekly Habits](#3-view-weekly-habits)
-      - [4. View Monthly Habits](#4-view-monthly-habits)
-      - [5. Back to Main Menu](#5-back-to-main-menu)
-  * [Analytics](#analytics)
-      - [1. View All Habit's Streaks](#1-view-all-habit-s-streaks)
-      - [2. View Longest Streak of Specific Habit](#2-view-longest-streak-of-specific-habit)
-      - [3. View Streak Log of Specific Habit](#3-view-streak-log-of-specific-habit)
-      - [4. Back to Main Menu](#4-back-to-main-menu-1)
-  * [Exit](#exit)
+  * [1.Creating a new  habit](#1.Creating a new  habit)
+  * [2.Remove a Habit](#2.Remove a Habit)
+  * [3.Mark your habit as completed(Check-off habit)](#3.Mark your habit as completed(Check-off habit))
+  * [4.Analyze your habit](#4.Analyze your habit)
 - [Contributing](#contributing)
 - [Contact](#contact)
 
@@ -64,7 +49,7 @@ Moreover, the user will also be able to:
 * Inquirer : Inquirer is a Python module for creating interactive command-line user interfaces. It makes it easier to create interactive prompts and collect user input from the command line.
 * Pytest : Pytest is a Python code testing framework that makes it easy to write and execute tests, making it easier to ensure the quality and correctness of your code.
 
-## Installing
+## Installing the tools
  Make sure that Python 3.7 + is installed on your OS. You can download the latest version of Python from [this link.](https://www.python.org/downloads/)<br>
 
 <br> After installing Python, you can proceed and install the following libraries. <br>
@@ -120,7 +105,7 @@ To run the test: navigate to the test folder (included with the repository) thro
 
 **Important**: You can choose to keep or remove the **main.db** file as it contains the following pre-defined habits: Coding, Workout, Grocery, Piano, and Hiking. <br>
 
-#### 1. Creating a new  habit
+## 1. Creating a new  habit
 Your first action should start by creating a habit and you can do so by launching the program and selecting:
 ```
  Create a new habit
@@ -134,21 +119,21 @@ Set the periodicity of your habit to either Daily or weekly :
  Weekly
 ```
 
-#### 2. Remove a Habit
+## 2. Remove a Habit
 Choose "Delete your habit" from the main screen and type the name of the habit you wish to remove.
 ```
 Enter the name of the habit you wish to delete :
 ```
 
 
-#### 3. Mark your habit as completed(Check-off habit)
+## 3. Mark your habit as completed(Check-off habit)
 To check-off or mark habit as complete, choose "Mark your habit as completed(Check-off)" from the main screen, then enter the name of the habit you want to check-off.
 ```
 Enter the name of the habit you wish to check-off :
 ```
 
 
-#### 4.Analyze your habit
+## 4.Analyze your habit
 The application also  provides the functionality to the users to analyze their habits. To analyze the habit, choose "analyze your habit" from the main screen and then choose their desirable analytical option.
 ```
 Select your desirable analytical option among the following :
