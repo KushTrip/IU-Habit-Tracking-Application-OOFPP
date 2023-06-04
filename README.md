@@ -1,6 +1,5 @@
 # IU-Habit-Tracking-Application-OOFPP
 ***
-<!-- TABLE OF CONTENTS -->
 # Table of Contents
 - [Habit Tracker](#habit-tracker)
   * [Habit Tracker's Core Functionality](#habit-tracker-s-core-functionality)
@@ -34,44 +33,45 @@
 - [Contributing](#contributing)
 - [Contact](#contact)
 
-# Habit Tracker
+# What is a habit tracking Application ?
 
-Having good habits leads to a healthy and successful lifestyle. However, developing and maintaining good habits is indeed a challenge hence, a good habit tracker can serve as an assistant for maintaining, keeping track of, and principally viewing your progress.
+ A habit monitoring/tracking application  helps users create and maintain healthy routines, allowing them to monitor their development by tracking their streaks and enhance their general well-being and productivity.The app allows users to keep track of their daily routines and habits by creating a new habit , and keep track of good habits to form and bad ones to break.
 
-This Habit Tracker will take all your data and progress headache away, giving you more time to work on your habits. The program is a part of *IU University's* *DLBDSOOFPP01* course and uses Python 3.8 as the backend of the program.
+ This work is a part of *IU University's* *object oriented and functional programming with python* course.
 
 
-## Habit Tracker's Core Functionality
+## Core Features of the Application
 The habit tracker essentially allows a user to:
 
-* Add habit 
-* Remove habit or category 
-* Define Periodicity of habits (Daily, weekly, and monthly)
-* Add Habit Category for habit reference
-* Mark your habit as completed
+* Create a habit 
+* Remove a habit 
+* Set Periodicity of habits (Daily or weekly)
+* Mark the habit as completed
 
-### Progress and Streak Tracker
-Additionally, the user can view:
+### Analytics
+Moreover, the user will also be able to:
 * View all of their created habits
-* View all of their created habits for a specific period
-* View streaks of all habits
-* View the longest streak of specific habit
-* View streak history of specific habit
+* Among all defined habits, view habits which are of the same periodicity.
+* Among all defined habits, view the habit which has the longest streak.
+* Among all defined habits, view the longest streak of a specific habit.
 
 
 
-# Getting Started
-**Important**: Make sure that Python 3.8 + is installed on your OS. You can download the latest version of Python from [this link.](https://www.python.org/downloads/)
+# Guide to the installation of the application
 
-## Dependencies
-* Python 3.8 +
-* Questionary 1.10.0 +
+## Tools required 
+* Python 3.7 + : Python is a high-level, interpreted programming language known for its simplicity and readability.
+* Inquirer : Inquirer is a Python module for creating interactive command-line user interfaces. It makes it easier to create interactive prompts and collect user input from the command line.
+* Pytest : Pytest is a Python code testing framework that makes it easy to write and execute tests, making it easier to ensure the quality and correctness of your code.
 
 ## Installing
-You can download the latest version of Python from [this link.](https://www.python.org/downloads/) - Make sure to check "ADD to path" in the Python installer. <br>
+ Make sure that Python 3.7 + is installed on your OS. You can download the latest version of Python from [this link.](https://www.python.org/downloads/)<br>
 
 <br> After installing Python, you can proceed and install the following libraries. <br>
+To clone the repository, navigate to the desired directory. Use this code to clone the repository and download the habit tracker application:
+```
 
+```
 <br>[Questionary](https://www.python.org/downloads/) - Questionary is a Python library for building pretty command line interfaces. 
 <br>Install by running the below command:<br>
 ```
