@@ -105,7 +105,7 @@ To run the test: navigate to the test folder (included with the repository) thro
 
 **Important**: You can choose to keep or remove the **main.db** file as it contains the following pre-defined habits: Coding, Workout, Grocery, Piano, and Hiking. <br>
 
-## 1. Creating a new  habit
+## 1.Creating a new  habit
 Your first action should start by creating a habit and you can do so by launching the program and selecting:
 ```
  Create a new habit
@@ -119,14 +119,14 @@ Set the periodicity of your habit to either Daily or weekly :
  Weekly
 ```
 
-## 2. Remove a Habit
+## 2.Remove a Habit
 Choose "Delete your habit" from the main screen and type the name of the habit you wish to remove.
 ```
 Enter the name of the habit you wish to delete :
 ```
 
 
-## 3. Mark your habit as completed(Check-off habit)
+## 3.Mark your habit as completed(Check-off habit)
 To check-off or mark habit as complete, choose "Mark your habit as completed(Check-off)" from the main screen, then enter the name of the habit you want to check-off.
 ```
 Enter the name of the habit you wish to check-off :
