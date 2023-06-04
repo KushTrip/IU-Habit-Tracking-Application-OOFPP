@@ -2,7 +2,7 @@
 ***
 # Table of Contents
 - [What is a habit tracking Application ?](#What-is-a-habit-tracking-Application-?)
-  * [Core Features of the Application](##Core-Features-of-the-Application)
+  * [Core Features of the Application](#Core-Features-of-the-Application)
     + [Analytics](#Analytics)
 - [Guide to the installation of the application](#Guide-to-the-installation-of-the-application)
   * [Tools required ](#Tools-required)
