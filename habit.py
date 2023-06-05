@@ -29,69 +29,69 @@ class Habit:
         
         def __repr__(self):
         """
-        :return: printable representation of an object
+        return: printable representation of an object
         """
         return f"{self.habit_name}:{self.habit_goal}:{self.habit_periodicity}"
           
-          def increase_streak(self, conn):
+          def increase_streak(self, connection):
         """
-        :param conn: a connection to a sqlite3 database
-        :return: increment the streak by 1
+        connection: a connection to a sqlite3 database
+        return: increment the streak by 1
         """
         self.streak = get_streak(conn, self.habit_name)
         self.streak += 1
 
     def reset_streak(self):
         """
-        :return: brings the streak back to 1
+        return: brings the streak back to 1
         """
         self.streak = 1
 
-    def create_new_habit(self, conn):
+    def create_new_habit(self, connection):
         """
         creates new habit and inserts it into database
-        :param conn: a connection to a sqlite3 database
-        :return: inserts new habit into database
+        connection: a connection to a sqlite3 database
+        return: inserts new habit into database
         """
         insert_habit_into_db(conn, self.habit_name, self.habit_goal, self.habit_periodicity)
         
         
-    def update_habit(self, conn):
+    def update_habit(self, connection):
         """
         ticks off a habit and increases streak
-        :param conn: a connection to a sqlite3 database
-        :return: increases habit streak by one
+        connection: a connection to a sqlite3 database
+        return: increases habit streak by one
         """
-        self.increase_streak(conn)
+        self.increase_streak(connection)
         check_off_habit(conn, self.habit_name, self.habit_periodicity, self.streak)
         update_habit_streak(conn, self.habit_name, self.streak)
         
         
-    def reset_habit_streak(self, conn):
+    def reset_habit_streak(self, connection):
         """
         resets streak
-        :param conn: a connection to a sqlite3 database
-        :return: resets the streak to one
+        connection: a connection to a sqlite3 database
+        return: resets the streak to one
         """
         self.reset_streak()
         update_habit_streak(conn, self.habit_name, self.streak)
         self.checked_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        check_off_habit(conn, self.habit_name, self.habit_periodicity, self.streak, self.checked_at)
+        check_off_habit(connection, self.habit_name, self.habit_periodicity, self.streak, self.checked_at)
           
-           def checkoff_habit(self, conn, test_date=None):
+           def checkoff_habit(self, connection, test_date=None):
         """
          if period is daily, cant check-off for next 24hrs and, 7 days if period is weekly, after completing habit
-        :param test_date: this parameter is for testing purpose
-        :param conn: a connection to a sqlite3 database
-        :return: check-off a habit, increments a streak by 1
+         param test_date: this parameter is for testing purpose
+         connection: a connection to a sqlite3 database
+         return: check-off a habit, increments a streak by 1
 
         """
-        streak = get_streak(conn, self.habit_name)
-        period = self.habit_periodicity = get_habit_periodicity(conn, self.habit_name)
+        streak = get_streak(connection, self.habit_name)
+        period = self.habit_periodicity = get_habit_periodicity(connection, self.habit_name)
         checkoff_logs = get_checked_at(conn, self.habit_name)
         
          if streak == 0:
-            self.update_habit(conn)
+            self.update_habit(connection)
             print('\x1b[6;30;42m' + f"{self.habit_name} checked-off successfully." + '\x1b[0m')
 
             # check daily habits
@@ -113,11 +113,11 @@ class Habit:
 
                 else:
                     if (today - last_checked).days == 1:
-                        self.update_habit(conn)
+                        self.update_habit(connection)
                         print('\x1b[6;30;42m' + "Habit checked off successfully." + '\x1b[0m')
 
                     else:
-                        self.reset_habit_streak(conn)
+                        self.reset_habit_streak(connection)
                         print(
                             '\x1b[6;30;42m' + "Habit checked off successfully, but streak reset to 1 because you broke the streak." + '\x1b[0m')
 
@@ -142,20 +142,20 @@ class Habit:
 
                 else:
                     if (today - last_checked).days == 7:
-                        self.update_habit(conn)
+                        self.update_habit(connection)
                         print('\x1b[6;30;42m' + "Weekly habit checked off successfully." + '\x1b[0m')
 
                     elif (today - last_checked).days > 7:
-                        self.reset_habit_streak(conn)
+                        self.reset_habit_streak(connection)
                         print(
                             '\x1b[6;30;42m' + "Habit checked off successfully, but streak reset to 1 because you broke the streak." + '\x1b[0m')
                         
                        
-        def remove_habit(self, conn):
+        def remove_habit(self, connection):
         """
         takes a habit out of the database.
-        :param conn: a connection to a sqlite3 database
-        :return: removes a habit from the database
+        connection: a connection to a sqlite3 database
+        return: removes a habit from the database
         """
         delete_habit(conn, self.habit_name)
         
