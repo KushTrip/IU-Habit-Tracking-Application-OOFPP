@@ -107,27 +107,4 @@ def return_all_habits_data(connection):
         return habit_names
 
       
-      def return_longest_streak_of_periodicity(connection, habit_periodicity):
-    """
-    returns the longest streak of habit with same periodicity
-    connection: a connection to a sqlite3 database
-    habit_periodicity: periodicity of the habit
-    return: the longest streak of habit with specific periodicity
-    """
-    longest_streak_of_periodicity = get_longest_streak_of_periodicity(connection, habit_periodicity)
-    streak = longest_streak_of_periodicity[0][0]
-    habit_name = longest_streak_of_periodicity[0][1]
-
-    if habit_name is None:
-        print('\x1b[6;30;42m' + f"no '{habit_periodicity}' habits found" + '\x1b[0m')
-
-    else:
-        if streak == 0:
-
-            print("Selected periodicity doesn't have the longest streak")
-            print("\n")
-        else:
-            print('\x1b[6;30;42m' + f"Among all {habit_periodicity} habits, '{habit_name}' has the longest streak of {streak}" + '\x1b[0m')
-    return streak
-      
-      
+    
