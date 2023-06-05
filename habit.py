@@ -29,12 +29,16 @@ class Habit:
         
         def __repr__(self):
         """
+         Parameters
+        ----------
         return: printable representation of an object
         """
         return f"{self.habit_name}:{self.habit_goal}:{self.habit_periodicity}"
           
           def increase_streak(self, connection):
         """
+         Parameters
+        ----------
         connection: a connection to a sqlite3 database
         return: increment the streak by 1
         """
@@ -43,12 +47,16 @@ class Habit:
 
     def reset_streak(self):
         """
+         Parameters
+        ----------
         return: brings the streak back to 1
         """
         self.streak = 1
 
     def create_new_habit(self, connection):
         """
+         Parameters
+        ----------
         creates new habit and inserts it into database
         connection: a connection to a sqlite3 database
         return: inserts new habit into database
@@ -58,6 +66,8 @@ class Habit:
         
     def update_habit(self, connection):
         """
+         Parameters
+        ----------
         ticks off a habit and increases streak
         connection: a connection to a sqlite3 database
         return: increases habit streak by one
@@ -80,8 +90,10 @@ class Habit:
           
            def checkoff_habit(self, connection, test_date=None):
         """
+         Parameters
+        ----------
          if period is daily, cant check-off for next 24hrs and, 7 days if period is weekly, after completing habit
-         param test_date: this parameter is for testing purpose
+         test_date: this parameter is for testing purpose
          connection: a connection to a sqlite3 database
          return: check-off a habit, increments a streak by 1
 
@@ -153,6 +165,8 @@ class Habit:
                        
         def remove_habit(self, connection):
         """
+         Parameters
+        ----------
         takes a habit out of the database.
         connection: a connection to a sqlite3 database
         return: removes a habit from the database
