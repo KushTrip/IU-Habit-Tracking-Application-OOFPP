@@ -255,7 +255,7 @@ def get_habit_name(connection, habit_name):
                 check_off_habit(connection, "Gym", "Daily", 3, "2023-06-07 00:00:00")
                 check_off_habit(connection, "Gym", "Daily", 2, "2023-06-08 00:00:00")
                 check_off_habit(connection, "Gym", "Daily", 2, "2023-06-19 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 3, "2023-06-24 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 5, "2023-06-24 00:00:00")
                 check_off_habit(connection, "Gym", "Daily", 1, "2023-06-28 00:00:00")
                 check_off_habit(connection, "Gym", "Daily", 1, "2023-06-29 00:00:00")
                 check_off_habit(connection, "Gym", "Daily", 2, "2023-06-30 00:00:00")
