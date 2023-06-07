@@ -241,49 +241,53 @@ def get_habit_name(connection, habit_name):
             if habit[0] == "Limit Excessive screen time":
                 # Limitation of Screen exposure 4-weeks data
                 check_off_habit(connection, "Limit Excessive screen time", "Weekly", 1, "2023-06-05 00:00:00")
-                check_off_habit(connection, "Limit Excessive screen time", "Weekly", 2, "2023-06-11 00:00:00")
+                check_off_habit(connection, "Limit Excessive screen time", "Weekly", 1, "2023-06-11 00:00:00")
                 check_off_habit(connection, "Limit Excessive screen time", "Weekly", 1, "2023-06-17 00:00:00")
                 check_off_habit(connection, "Limit Excessive screen time", "Weekly", 1, "2023-06-24 00:00:00")
                 update_habit_streak(connection, "Limit Excessive screen time", 1)
 
-            if habit[0] == "Community Service":
+       
+
+            if habit[0] == "Gym":
+                # Gym 4-weeks data
+                check_off_habit(connection, "Gym", "Daily", 3, "2023-06-05 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 1, "2023-06-06 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 3, "2023-06-07 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 2, "2023-06-08 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 2, "2023-06-19 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 3, "2023-06-24 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 1, "2023-06-28 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 1, "2023-06-29 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 2, "2023-06-30 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 3, "2023-07-01 00:00:00")
+                check_off_habit(connection, "Gym", "Daily", 2, "2023-07-02 00:00:00")
+                update_habit_streak(connection, "Gym", 2)
+
+                
+           if habit[0] == "Community Service":
                 # community service 4-weeks data
-                check_off_habit(connection, "Community Service", "Weekly", 1, "2023-06-05 00:00:00")
+                check_off_habit(connection, "Community Service", "Weekly", 2, "2023-06-05 00:00:00")
                 check_off_habit(connection, "Community Service", "Weekly", 2, "2023-06-11 00:00:00")
                 check_off_habit(connection, "Community Service", "Weekly", 3, "2023-06-17 00:00:00")
                 check_off_habit(connection, "Community Service", "Weekly", 1, "2023-06-24 00:00:00")
                 update_habit_streak(connection, "Community Service", 1)
-
-            if habit[0] == "Gym":
-                # Gym 4-weeks data
-                check_off_habit(connection, "Gym", "Daily", 5, "2023-03-01 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 6, "2023-03-02 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 7, "2023-03-03 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 8, "2023-03-04 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 5, "2023-03-15 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 5, "2023-03-20 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 5, "2023-03-24 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 6, "2023-03-25 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 7, "2023-03-26 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 5, "2023-03-27 00:00:00")
-                check_off_habit(connection, "Gym", "Daily", 6, "2023-03-28 00:00:00")
-                update_habit_streak(connection, "Gym", 2)
-
+                
+                
             if habit[0] == "Maintain a Diary":
                 # Maintain a dairy 4-weeks data
-                check_off_habit(connection, "Maintain a Diary", "Daily", 5, "2023-03-01 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 6, "2023-03-02 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 7, "2023-03-03 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 8, "2023-03-04 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 9, "2023-03-05 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 10, "2023-03-06 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 5, "2023-03-15 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 5, "2023-03-19 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 5, "2023-03-21 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 6, "2023-03-22 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 5, "2023-03-26 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 6, "2023-03-27 00:00:00")
-                check_off_habit(connection, "Maintain a Diary", "Daily", 7, "2023-03-28 00:00:00")
-                update_habit_streak(connection, "Maintain a Diary", 7)
+                check_off_habit(connection, "Maintain a Diary", "Daily", 2, "2023-06-05 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 3, "2023-06-06 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 3, "2023-06-07 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 3, "2023-06-08 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 2, "2023-06-09 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 1, "2023-06-10 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 1, "2023-06-15 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 2, "2023-06-19 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 2, "2023-06-21 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 1, "2023-06-22 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 1, "2023-06-26 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 1, "2023-06-27 00:00:00")
+                check_off_habit(connection, "Maintain a Diary", "Daily", 3, "2023-06-28 00:00:00")
+                update_habit_streak(connection, "Maintain a Diary", 3)
                 
                 
